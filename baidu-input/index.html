@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="//at.alicdn.com/t/font_1244246_ooeow11hjas.js"></script>
+  <title>百度一下</title>
+  <style>
+    .icon {
+      width: 17px;
+      height: 17px;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    *::before,
+    *::after {
+      box-sizing: border-box
+    }
+
+    ul,
+    ol {
+      list-style: none;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .searchBarWrapper {
+      display: flex;
+    }
+
+    .searchBarWrapper .inputWrapper {
+      float: left;
+      position: relative;
+    }
+
+    .searchBarWrapper .inputWrapper+button {
+      float: left;
+      background-color: #38f;
+      border: none;
+      color: white;
+      width: 102px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .searchBarWrapper .inputWrapper+button:hover {
+      background-color: #317ef3;
+      box-shadow: 1px 1px 1px #ccc;
+    }
+
+    .searchBarWrapper input {
+      width: 536px;
+      height: 40px;
+      padding-left: 8px;
+      /* 光标的高度 */
+      font-size: 17px;
+      line-height: 40px;
+      border: 1px solid #b8b8b8;
+      border-right-color: #38f;
+      line-height: 38px;
+    }
+
+    .searchBarWrapper input:focus {
+      outline: none;
+      border-color: #4b94fc;
+    }
+
+    .searchBarWrapper ul {
+      display: none;
+    }
+
+    .searchBarWrapper .floatIcon {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 10px;
+    }
+
+    .searchBarWrapper .floatIcon .splitLine {
+      width: 0;
+      height: 16px;
+      border-left: 1px solid #b8b8b8;
+      margin: 0 10px;
+    }
+
+    .searchBarWrapper .floatIcon .icon {
+      fill: #b8b8b8;
+    }
+
+    .searchBarWrapper .floatIcon .icon:hover {
+      fill: #4b94fc;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="searchBarWrapper">
+    <span class="inputWrapper">
+      <input type="text">
+      <span class="floatIcon">
+        <svg class="icon">
+          <use xlink:href="#icon-mic"></use>
+        </svg>
+        <span class="splitLine"></span>
+        <svg class="icon">
+          <use xlink:href="#icon-camera"></use>
+        </svg>
+      </span>
+    </span>
+    <button>百度一下</button>
+    <ul>
+      <li>选项1</li>
+      <li>选项2</li>
+      <li>选项3</li>
+    </ul>
+  </div>
+</body>
+
+</html>
